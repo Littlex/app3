@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">app3</string>
+    <string-array name="SanFinterests">
+        <item>Golden Gate Bridge</item>
+        <item>Fisherman's Wharf</item>
+        <item>Alcatraz Island</item>
+        <item>Chinatown</item>
+        <item>Muir Woods National Monument</item>
+        <item>Ferry Building</item>
+    </string-array>
+    <string-array name="SanFinterests_url">
+        <item>http://goldengatebridge.org/</item>
+        <item>http://www.fishermanswharf.org/</item>
+        <item>https://www.alcatrazcruises.com/</item>
+        <item>http://www.sanfranciscochinatown.com/</item>
+        <item>https://www.nps.gov/muwo/index.htm</item>
+        <item>https://www.ferrybuildingmarketplace.com/</item>
+    </string-array>
+</resources>
+
+

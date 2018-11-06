@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shuangxi.app3">
+
+    <permission android:name="edu.uic.cs478.f18.project3"
+        android:protectionLevel="dangerous" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="edu.uic.cs478.f18.project3"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DetailsActivity">
+        </activity>
+        <activity android:name=".SFActivity">
+        </activity>
+
+        <receiver
+            android:label="app3Receiver"
+            android:enabled="true"
+            android:name="App3Receiver"
+            android:exported="true"
+            android:permission="edu.uic.cs478.f18.project3">
+            <intent-filter android:priority="1" >
+                <action android:name="com.example.shuangxi.app1.SF"  >
+                </action>
+                <action android:name="com.example.shuangxi.app1.NY"  >
+                </action>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>
